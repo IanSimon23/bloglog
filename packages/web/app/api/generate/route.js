@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { readFile, writeFile } from 'fs/promises';
+import { readFile, writeFile, mkdir } from 'fs/promises';
 import { existsSync } from 'fs';
 import { join } from 'path';
 import Anthropic from '@anthropic-ai/sdk';
@@ -112,6 +112,8 @@ Format as a readable markdown document with:
       : `timeline-${dateStr}.md`;
     const filepath = join(draftsPath, filename);
 
+    // Ensure drafts directory exists
+    await mkdir(draftsPath, { recursive: true });
     await writeFile(filepath, content);
 
     return NextResponse.json({

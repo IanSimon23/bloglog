@@ -120,6 +120,13 @@
       "type": "conversation",
       "summary": "This development conversation focused on learning Claude Code by building \"BlogLog\" - a meta-tool for documenting development in real-time. The key accomplishment was successfully creating a working CLI and web application that captures development timelines (commits, notes, breakthroughs, blockers) and generates blog posts using AI. Major decisions included using a CLI-first approach that wraps git commits for zero-friction adoption, storing data in JSON files for git-friendliness, and building multi-project support where each project gets its own `.bloglog/` directory.\n\nThe most interesting insight was the recursive nature of the project - using BlogLog to document building BlogLog itself, which validated the tool's design in real-time and demonstrated Claude Code's capability to scaffold a complete project (CLI tool + Next.js web interface) in about 90 minutes through natural language direction.",
       "tags": []
+    },
+    {
+      "id": "b6ef46c2-d039-40f0-8797-b47135c2ebab",
+      "timestamp": "2026-01-14T22:18:05.876Z",
+      "type": "commit",
+      "message": "fix timeline display for conversation entries (cache cleared)",
+      "gitHash": "6303d6bd7bbc463cc861e55f35437c8d0b39c72d"
     }
   ]
 }
