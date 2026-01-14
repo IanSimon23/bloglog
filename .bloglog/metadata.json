@@ -1,0 +1,7 @@
+{
+  "projectName": "BlogLog",
+  "initialized": "2025-01-14T19:15:00.000Z",
+  "problem": "Developers do interesting work but don't document it effectively. Manual blog writing happens retrospectively (if at all), losing the narrative of decisions, blockers, and breakthroughs as they happen.",
+  "goals": "Learn Claude Code workflow and capabilities. Build practical CLI tool development skills. Practice habit-forming tool design (zero friction).",
+  "successCriteria": "Zero friction: `bl commit` becomes natural replacement for `git commit`. Works seamlessly alongside existing workflow. Generates usable blog post draft from 30-60 min development session."
+}

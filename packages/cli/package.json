@@ -1,0 +1,25 @@
+{
+  "name": "@bloglog/cli",
+  "version": "0.1.0",
+  "description": "BlogLog CLI tool for capturing development timeline",
+  "bin": {
+    "bl": "./bin/bl.js"
+  },
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bin/bl.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "simple-git": "^3.25.0",
+    "uuid": "^10.0.0",
+    "@bloglog/shared": "*"
+  },
+  "keywords": [
+    "cli",
+    "blog",
+    "development"
+  ],
+  "license": "MIT"
+}

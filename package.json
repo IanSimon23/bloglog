@@ -1,0 +1,22 @@
+{
+  "name": "bloglog",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A lightweight CLI and web tool for capturing development timeline and generating blog posts",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@bloglog/web",
+    "build": "npm run build --workspaces",
+    "cli": "npm run start --workspace=@bloglog/cli"
+  },
+  "keywords": [
+    "blog",
+    "development",
+    "documentation",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT"
+}

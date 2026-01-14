@@ -1,0 +1,16 @@
+node_modules/
+.next/
+dist/
+*.log
+
+# BlogLog server state
+packages/cli/.server.pid
+packages/cli/.server.project
+
+# Environment
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db

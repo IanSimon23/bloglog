@@ -1,0 +1,17 @@
+{
+  "name": "@bloglog/shared",
+  "version": "0.1.0",
+  "description": "Shared utilities for BlogLog",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./storage": "./storage.js",
+    "./ai": "./ai.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "uuid": "^10.0.0"
+  },
+  "license": "MIT"
+}
