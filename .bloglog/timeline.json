@@ -30,6 +30,29 @@
       "timestamp": "2026-01-14T19:27:20.209Z",
       "type": "win",
       "content": "Claude is building while I write the blog\n\n"
+    },
+    {
+      "id": "4258b8c8-5f1f-4ead-9cd0-84bb5948da4a",
+      "timestamp": "2026-01-14T19:33:18.318Z",
+      "type": "commit",
+      "message": "add /timeline and /init web routes with APIs",
+      "gitHash": "04c70682ffe8a76c41627c26c411600dea22b7e7"
+    },
+    {
+      "id": "20d6204f-b744-4bfa-b12d-4d7ad663700d",
+      "timestamp": "2026-01-14T19:39:46.127Z",
+      "type": "win",
+      "content": "Loving Claude Code - this is effortless to start, but I can see how I'll be able to step in when the snafu's happen.  So powerful"
+    },
+    {
+      "id": "ff39276b-eec6-4191-ac49-7b7527a76886",
+      "timestamp": "2026-01-14T19:53:01.569Z",
+      "type": "conversation",
+      "summary": "Built /capture page with conversation logging and AI summarization",
+      "tags": [
+        "web",
+        "capture"
+      ]
     }
   ]
 }
