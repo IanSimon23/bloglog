@@ -53,6 +53,13 @@
         "web",
         "capture"
       ]
+    },
+    {
+      "id": "c258d6b0-b6eb-4e3a-ad48-8288cfe58b87",
+      "timestamp": "2026-01-14T19:53:58.381Z",
+      "type": "commit",
+      "message": "add /capture page with conversation logging and AI summarization",
+      "gitHash": "5f7f1c1e13aadf50721cb6268f700578dfe825c9"
     }
   ]
 }
