@@ -1,3 +1,35 @@
 {
-  "entries": []
+  "entries": [
+    {
+      "id": "77b98739-9c71-448b-b8e0-6b00c6edb865",
+      "timestamp": "2026-01-14T19:20:58.563Z",
+      "type": "commit",
+      "message": "initial project setup - CLI, web, and shared packages",
+      "gitHash": "01d81fab526a7d6778b1816514b853e800bad9c3"
+    },
+    {
+      "id": "b60df4f0-66f4-444b-8b3f-7e65c364cf39",
+      "timestamp": "2026-01-14T19:25:27.070Z",
+      "type": "note",
+      "content": "CLI foundation complete - commit, note, win, blocker commands ready"
+    },
+    {
+      "id": "0c1e68ff-0dc9-4422-8510-9998fed09297",
+      "timestamp": "2026-01-14T19:25:56.758Z",
+      "type": "win",
+      "content": "bl commit works end-to-end - logs to timeline AND runs git commit"
+    },
+    {
+      "id": "d31f916d-e498-44b2-ac86-7fc1caebb420",
+      "timestamp": "2026-01-14T19:26:36.398Z",
+      "type": "blocker",
+      "content": "need to build web interface routes next"
+    },
+    {
+      "id": "1fffdd06-577b-4f85-b734-59552345188f",
+      "timestamp": "2026-01-14T19:27:20.209Z",
+      "type": "win",
+      "content": "Claude is building while I write the blog\n\n"
+    }
+  ]
 }
