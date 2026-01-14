@@ -22,7 +22,9 @@ function formatRelativeTime(timestamp) {
 }
 
 function EntryCard({ entry }) {
-  const content = entry.type === 'commit' ? entry.message : entry.content;
+  const content = entry.type === 'commit' ? entry.message
+    : entry.type === 'conversation' ? entry.summary
+    : entry.content;
 
   return (
     <div className="card">
@@ -37,6 +39,13 @@ function EntryCard({ entry }) {
         <code style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
           {entry.gitHash.slice(0, 7)}
         </code>
+      )}
+      {entry.tags && entry.tags.length > 0 && (
+        <div style={{ marginTop: '0.5rem' }}>
+          {entry.tags.map(tag => (
+            <span key={tag} style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginRight: '0.5rem' }}>#{tag}</span>
+          ))}
+        </div>
       )}
     </div>
   );
