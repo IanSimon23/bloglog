@@ -106,6 +106,20 @@
       "type": "conversation",
       "summary": "This development conversation accomplished building BlogLog, a meta-tool for documenting development work in real-time, using Claude Code as the primary development approach. Key decisions made include: using a CLI-first design that wraps git commits (`bl commit` replaces `git commit -m`), implementing a Next.js web interface for longer captures and timeline viewing, storing data in JSON files for simplicity, and designing for zero-friction habit formation in the developer workflow. The project serves as both a practical documentation tool and a learning vehicle for Claude Code, with the meta-aspect of using BlogLog to document its own creation being a central theme throughout development.",
       "tags": []
+    },
+    {
+      "id": "58006ad6-d175-4562-9ee5-d0730cde91be",
+      "timestamp": "2026-01-14T22:04:56.479Z",
+      "type": "commit",
+      "message": "fix timeline display for conversation entries and add tags",
+      "gitHash": "8341fd8ae3584d9b7de1b6d9e6bb1853f9fdf274"
+    },
+    {
+      "id": "03770183-9dc8-4a54-9065-40905e2b11e1",
+      "timestamp": "2026-01-14T22:06:22.444Z",
+      "type": "conversation",
+      "summary": "This development conversation focused on learning Claude Code by building \"BlogLog\" - a meta-tool for documenting development in real-time. The key accomplishment was successfully creating a working CLI and web application that captures development timelines (commits, notes, breakthroughs, blockers) and generates blog posts using AI. Major decisions included using a CLI-first approach that wraps git commits for zero-friction adoption, storing data in JSON files for git-friendliness, and building multi-project support where each project gets its own `.bloglog/` directory.\n\nThe most interesting insight was the recursive nature of the project - using BlogLog to document building BlogLog itself, which validated the tool's design in real-time and demonstrated Claude Code's capability to scaffold a complete project (CLI tool + Next.js web interface) in about 90 minutes through natural language direction.",
+      "tags": []
     }
   ]
 }
