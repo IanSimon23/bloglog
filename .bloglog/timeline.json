@@ -60,6 +60,19 @@
       "type": "commit",
       "message": "add /capture page with conversation logging and AI summarization",
       "gitHash": "5f7f1c1e13aadf50721cb6268f700578dfe825c9"
+    },
+    {
+      "id": "1b567d53-7590-4b79-bf56-2a3556755541",
+      "timestamp": "2026-01-14T20:46:13.530Z",
+      "type": "commit",
+      "message": "add /generate page for blog post generation",
+      "gitHash": "be4c58118692387172feafc0b87bb84da5e35500"
+    },
+    {
+      "id": "762633aa-5b22-4dfd-a3cd-6c302d080fb5",
+      "timestamp": "2026-01-14T20:48:08.317Z",
+      "type": "win",
+      "content": "Claude Code gives space for documentation during the build process"
     }
   ]
 }
