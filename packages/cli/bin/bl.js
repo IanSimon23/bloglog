@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
+import { initCommand } from '../src/commands/init.js';
 import { commitCommand } from '../src/commands/commit.js';
 import { noteCommand } from '../src/commands/note.js';
 import { winCommand } from '../src/commands/win.js';
@@ -14,6 +15,14 @@ program
   .name('bl')
   .description('BlogLog - Capture your development timeline')
   .version('0.1.0');
+
+// Initialization
+program
+  .command('init')
+  .description('Initialize BlogLog in the current directory')
+  .option('-n, --name <name>', 'Project name (defaults to directory name)')
+  .option('-w, --win <message>', 'Log an initial win to celebrate starting')
+  .action(initCommand);
 
 // Server commands
 program
