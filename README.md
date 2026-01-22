@@ -21,9 +21,10 @@ npm install
 # Link the CLI globally
 cd packages/cli && npm link && cd ../..
 
-# Initialize in any project
-mkdir .bloglog
-echo '{"entries":[]}' > .bloglog/timeline.json
+# Initialize BlogLog in any project
+cd /path/to/your/project
+bl init                                    # Creates .bloglog/ directory
+bl init --win "Starting a new project!"   # With an initial win entry
 
 # Start capturing
 bl commit "initial setup"
@@ -36,6 +37,9 @@ bl blocker "CI pipeline failing"
 
 | Command | Description |
 |---------|-------------|
+| `bl init` | Initialize BlogLog in current directory |
+| `bl init --name "Name"` | Initialize with custom project name |
+| `bl init --win "msg"` | Initialize with an initial win entry |
 | `bl commit "msg"` | Log message + run `git commit -m "msg"` |
 | `bl note "text"` | Quick capture a thought |
 | `bl win "text"` | Log a breakthrough moment |

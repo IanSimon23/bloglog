@@ -1,5 +1,26 @@
 # BlogLog - Development Documentation Tool
 
+## Using BlogLog During Development
+
+**Important:** This project uses BlogLog to track its own development. When making changes:
+
+- **Use `bl commit "message"` instead of `git commit`** - This logs the commit to the timeline AND runs git commit
+- **Use `bl win "message"`** when you accomplish something notable or solve a tricky problem
+- **Use `bl note "message"`** to capture thoughts, decisions, or things to revisit later
+- **Use `bl blocker "message"`** when stuck on something
+
+Example workflow:
+```bash
+# After implementing a feature
+bl commit "add user authentication"
+
+# After figuring something out
+bl win "finally got OAuth working with the new API"
+
+# Quick thought capture
+bl note "should revisit error handling here"
+```
+
 ## Project Purpose
 A lightweight CLI and web tool for capturing development timeline and generating blog posts from the work. This is a meta-project: learning Claude Code by building a tool that documents learning Claude Code.
 
@@ -99,6 +120,10 @@ project-root/
 
 ### CLI Commands
 ```bash
+bl init                 # Initialize BlogLog in current directory
+bl init --name "Name"   # Initialize with custom project name
+bl init --win "msg"     # Initialize with an initial win entry
+
 bl serve [--daemon]     # Start web server (daemon mode = background)
 bl status               # Show server status and current project
 bl stop                 # Stop daemon server
@@ -121,12 +146,20 @@ bl generate             # Interactive: timeline/narrative/both?
 ## Key Workflows
 
 ### 1. Project Initialization
-User visits `/init` in web interface, fills out:
+**Option A: CLI (quick start)**
+```bash
+bl init                              # Creates .bloglog/ with empty metadata
+bl init --win "Starting fresh!"      # Also log an initial win
+bl init --name "My Project"          # Custom project name
+```
+
+**Option B: Web interface (detailed setup)**
+Visit `/init` and fill out:
 - What problem are you solving? (markdown)
 - What do you want to learn? (markdown)
 - Success criteria? (markdown)
 
-Saves to `.bloglog/metadata.json`
+Both save to `.bloglog/metadata.json`
 
 ### 2. Development Capture
 ```bash
